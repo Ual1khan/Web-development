@@ -1,0 +1,67 @@
+body {
+    padding: 0px;
+    margin: 0px;
+  }
+.top {
+    background-color: black;
+    height: 70px;
+    width: 100%;
+}
+.logo {
+    position: absolute;
+    color: white;
+    font-size: 30px;
+    margin-left: 50px;
+    margin-top: 20px;
+}
+.input{
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#input-text{
+    float: left;
+    position: absolute;
+    height: 50px;
+    width: 57%;
+    margin-left: 50px;
+}
+.add-btn{
+    color: white;
+    background-color: green;
+    float: right;
+    height: 50px;
+    width: 60px;
+    margin-left: 950px;
+    position: absolute;
+    cursor: pointer;
+}
+#list{
+    position: absolute;
+    margin-top: 100px;
+    margin-left: 100px;
+    border-spacing: 50px;
+}
+ul li.checked {
+    background: #888;
+    color: #305199;
+    text-decoration: line-through;
+}
+ul li.checked::before {
+    content: '';
+    position: absolute;
+    border-color: #305199;
+    border-style: solid;
+    border-width: 0 2px 2px 0;
+    top: 10px;
+    left: 16px;
+    transform: rotate(45deg);
+    height: 15px;
+    width: 7px;
+}
+.done{
+    text-decoration: line-through;
+}
+.X {
+    color: red;
+}
