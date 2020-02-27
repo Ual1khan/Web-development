@@ -1,0 +1,27 @@
+<!-- <ul class="heroes">
+    <li *ngIf="category">
+        <a >
+            <span class="badge">{{category.id}}</span> {{category.name}}
+        </a>
+    </li>
+</ul> -->
+<h1>{{category.id}} is a category of {{category.name}}</h1>
+<div *ngFor="let product of products; index as productId">
+
+<div *ngIf="product.categoryId==category.id">
+    
+    <a  [title]="product.name + ' details'" [routerLink]="['/products', productId]">
+    <h3>{{product.name}}</h3>
+    </a>
+    <img src="{{product.image}}">
+    <p *ngIf="product.description">
+        Description: {{ product.description }}
+    </p>
+    <p *ngIf="product.price" id="price">
+        Price: {{product.price}} KZT
+    </p>
+    <p id="rating">
+        Rating: {{product.rating}}
+    </p>
+</div>
+</div>

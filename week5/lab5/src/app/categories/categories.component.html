@@ -1,0 +1,8 @@
+<ul class="heroes">
+    <li *ngFor="let category of categories  index as id">
+        <a  routerLink="/categoryList/{{category.id}}">
+            <span class="badge">{{category.id}}</span>{{category.name}}
+        </a>
+
+    </li>
+</ul>
